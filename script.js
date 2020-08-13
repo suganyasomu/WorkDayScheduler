@@ -40,23 +40,24 @@ $(document).ready(function () {
       .val();
     var eventText = $("#" + buttonId)
       .prev()
-      .text(eventDesc);
-    console.log(eventText.val());
-    localStorage.setItem(buttonId, eventText.val());
-    var localValue = window.localStorage.getItem(buttonId);
+      .text(eventDesc)
+      .val();
+    console.log(eventText);
+    localStorage.setItem(buttonId, eventText);
+    var localValue = localStorage.getItem(buttonId);
     console.log(localValue);
     console.log(
       $("#" + buttonId)
-        .prev()
-        .text(localValue)
+      .prev()
+      .text(localValue)
     );
   }
 
   //Step 1: Executes when the page is loaded
   function load() {
     for (var i = 0; i < localStorage.length; i++) {
-      var key = window.localStorage.key(i);
-      var value = window.localStorage.getItem(key);
+      var key = localStorage.key(i);
+      var value = localStorage.getItem(key);
       $("#" + key)
         .prev()
         .text(value);
@@ -83,7 +84,7 @@ $(document).ready(function () {
       if (hrsFormat < currentTime) {
         console.log(hrsFormat);
         console.log(currentTime);
-        $(time[j]).next().css("background-color", "yellow");
+        $(time[j]).next().css("background-color", "grey");
       }
 
       // if ($.trim(time[j].innerHTML) < currentTime) {
@@ -99,8 +100,9 @@ $(document).ready(function () {
       // }
     }
   }
-  window.addEventListener("load", load);
 
   //Add Event Listeners for each button
   $(buttons).on("click", save);
+
+  load();
 });
