@@ -39,8 +39,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - [Moment](https://momentjs.com/)
 - [jquery](https://jquery.com/)
 - [Font awesome](https://fontawesome.com/)
-- [Instructor](Rani)
-- [Tutor] (Folk Hannah)
+- Instructor- Rani
+- Tutor - Folk Hannah
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
