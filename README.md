@@ -2,11 +2,14 @@
 
 Project name is a `scheduler` that allows `users` to do `plan their workday from 9 AM to 5 PM`.
 
-[![Product Name Screen Shot][product-screenshot]]
+[![Product Name Screen Shot]product-screenshot]
 
 ## Process
 
-Making of the project
+1. Created the design for the work day scheduler web app using HTML and CSS.
+2. Using Jquery , connected to the HTML document.
+   - Grabbed the elements from the HTML page.
+   - Created functions to save the event and display colors for the timeblock based on the past, current and future
 
 ## Using WorkDay Scheduler
 
@@ -15,15 +18,13 @@ To use WorkDay Scheduler, follow these steps:
 1. Create an event for the particular time.
 2. Save the event.
 
-If you refresh the page, the events should stay on the page. Also, gray time blocks mean that that time is in the past, red means that is the current hour, and green means that that time has not yet passed.
+If you refresh the page, the events should stay on the page. Also, gray time blocks mean that that time is in the past, red means that is the current hour, and green means that that time is in the future.
 
 ## Contact
 
 If you want to contact me you can reach me at sweetsugan12@gmail.com.
 
 ## License
-
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
 Copyright 2020 Suganya Somu
 
@@ -35,13 +36,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Acknowledgements
 
-1.Hannah,Folk
-
-- [Moment](https://www.momentjs.org)
-- []()
-- []()
+- [Moment](https://momentjs.com/)
+- [jquery](https://jquery.com/)
+- [Font awesome](https://fontawesome.com/)
+- [Instructor](Rani)
+- [Tutor] (Folk Hannah)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [product-screenshot]: images/WorkDayScheduler.JPG
