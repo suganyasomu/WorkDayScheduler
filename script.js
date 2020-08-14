@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   //Current day and date will be displayed using moment at the top of the calendar
   var currentDay = moment().format("dddd");
   var currentDate = moment().format("MMM Do");
@@ -10,7 +9,6 @@ $(document).ready(function () {
   var time = $(".hour");
 
   var buttons = $("button");
-
 
   //Step 1: When the page is loaded , already created event should be displayed on the respective textarea.
   function load() {
@@ -29,14 +27,14 @@ $(document).ready(function () {
     for (var j = 0; j < time.length; j++) {
       var hrsFormat = moment($.trim(time[j].innerHTML), ["h A"]).format("HH");
       if (hrsFormat === currentTime) {
-        $(time[j]).next().css("background-color", "red");
+        $(time[j]).next().css("background-color", "#ff6961");
       }
       if (hrsFormat > currentTime) {
-        $(time[j]).next().css("background-color", "green");
+        $(time[j]).next().css("background-color", "#77dd77");
       }
 
       if (hrsFormat < currentTime) {
-        $(time[j]).next().css("background-color", "grey");
+        $(time[j]).next().css("background-color", "#d3d3d3");
       }
     }
   }
@@ -57,8 +55,8 @@ $(document).ready(function () {
     console.log(localValue);
     console.log(
       $("#" + buttonId)
-      .prev()
-      .text(localValue)
+        .prev()
+        .text(localValue)
     );
   }
   //Add Event Listeners for each button
