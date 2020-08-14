@@ -2,7 +2,7 @@
 
 Project name is a `scheduler` that allows `users` to do `plan their workday from 9 AM to 5 PM`.
 
-[![Product Name Screen Shot][product-screenshot]
+![Product Name Screen Shot][product-screenshot]
 
 ## Process
 
