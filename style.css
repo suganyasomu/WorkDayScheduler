@@ -35,6 +35,7 @@ textarea {
   height: 80px;
   border-top: 3px solid white;
   background-color: grey;
+  margin-bottom: 7px;
 }
 
 .hour {
